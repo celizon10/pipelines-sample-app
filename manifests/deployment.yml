@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: celizonpipelinessampleapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: celizonpipelinessampleapp
+  template:
+    metadata:
+      labels:
+        app: celizonpipelinessampleapp 
+    spec:
+      containers:
+        - name: celizonpipelinessampleapp 
+          image: cloudmanagement.azurecr.io/celizonpipelinessampleapp
+          ports:
+          - containerPort: 2801
