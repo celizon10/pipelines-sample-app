@@ -16,4 +16,4 @@ spec:
         - name: celizonpipelinessampleapp 
           image: cloudmanagement.azurecr.io/celizonpipelinessampleapp
           ports:
-          - containerPort: 2801
+          - containerPort: 2806
